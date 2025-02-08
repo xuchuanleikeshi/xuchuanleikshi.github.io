@@ -8,8 +8,6 @@ python -m venv weld_seam_env
 # 激活虚拟环境
 # Windows
 weld_seam_env\Scripts\activate
-# macOS/Linux
-source weld_seam_env/bin/activate
 ```
 安装所需库
 ```bash
