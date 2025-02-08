@@ -1,5 +1,52 @@
 #密封钉缺陷检测
 ##本算法针对密封钉缺陷检测，将任务分解为焊道分割和焊道发黑检测两部分，利用多线程技术来执行YOLOv5和U-Net模型的训练与预测，最后用Qt进行界面可视化。
+
+编程环境：
+```bash
+# 创建虚拟环境（假设使用 Python 3.x）
+python -m venv weld_seam_env
+# 激活虚拟环境
+# Windows
+weld_seam_env\Scripts\activate
+# macOS/Linux
+source weld_seam_env/bin/activate
+```
+安装所需库
+```bash
+# 安装 PyQt5（用于界面开发）
+pip install PyQt5
+# 安装 OpenCV（用于图像处理）
+pip install opencv-python
+# 安装 PyTorch（用于深度学习模型）
+# 根据你的系统和 CUDA 版本选择合适的安装命令
+# CPU 版本
+pip install torch torchvision torchaudio
+# CUDA 11.8 版本
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# 安装 NumPy（用于科学计算）
+pip install numpy
+# 安装其他可能需要的库
+pip install glob2  # 用于文件路径匹配
+pip install tqdm   # 用于进度条显示（如果代码中有用到）
+
+# 安装 YOLOv5 依赖
+pip install -r https://raw.githubusercontent.com/ultralytics/yolov5/master/requirements.txt
+
+# 安装 U-Net 相关依赖（如果有额外的 requirements.txt 文件）
+# 假设你的 U-Net 代码在 QtDesigner/model/unet_model.py 中
+# 如果有 requirements.txt，可以运行：
+pip install -r QtDesigner/model/requirements.txt
+```
+验证安装：
+```bash
+# 检查 PyQt5 是否安装成功
+python -c "from PyQt5 import QtWidgets; print('PyQt5 installed successfully')"
+# 检查 OpenCV 是否安装成功
+python -c "import cv2; print(cv2.__version__)"
+# 检查 PyTorch 是否安装成功
+python -c "import torch; print(torch.__version__); print(torch.cuda.is_available())"
+```
+
 ##任务要求如下：
 ![image](https://github.com/xuchuanleikeshi/xuchuanleikshi.github.io/blob/main/%E6%A3%80%E6%B5%8B%E8%A6%81%E6%B1%82.JPG)
 ##数据集预览：
