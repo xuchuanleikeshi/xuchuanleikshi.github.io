@@ -46,7 +46,7 @@ python -c "import torch; print(torch.__version__); print(torch.cuda.is_available
 ```
 
 ##任务要求如下：
-![image](https://github.com/xuchuanleikeshi/xuchuanleikshi.github.io/blob/main/%E6%A3%80%E6%B5%8B%E8%A6%81%E6%B1%82.JPG)
+![image](https://github.com/xuchuanleikeshi/xuchuanleikshi.github.io/blob/main/%E6%A3%80%E6%B5%8B%E8%A6%81%E6%B1%82.JPG)<br>
 ##数据集预览：
 ![image](https://github.com/xuchuanleikeshi/xuchuanleikshi.github.io/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-08%20102716.png)
 ##在焊道分割任务中，U-Net模型通过图像分割技术识别焊道中的发黑区域。U-Net采用对称的编码器-解码器结构，编码器通过卷积和下采样 提取全局特征，解码器通过上采样还原图像细节，生成焊道发黑区域的掩码图。训练过程使用BCEWithLogitsLoss作为损失函数，RMSprop优化器优化模型。数据加载使用ISBI_Loader，并支持GPU加速，以提升训练效率。实践证明该算法模型适用于该焊道检测中焊道分割的精准提取。
