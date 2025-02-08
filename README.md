@@ -56,5 +56,7 @@ python -c "import torch; print(torch.__version__); print(torch.cuda.is_available
 ![image](https://github.com/xuchuanleikeshi/xuchuanleikshi.github.io/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-06%20120059.png)
 项目打包成.exe文件：
 ![image](https://github.com/xuchuanleikeshi/xuchuanleikshi.github.io/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-08%20105921.png)
-.exe程序预览，环境检测通过：
+.exe程序预览，环境检测通过：<br>
 ![image](https://github.com/xuchuanleikeshi/xuchuanleikshi.github.io/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-08%20111924.png)
+识别结果：<br>
+![image](https://github.com/xuchuanleikeshi/xuchuanleikshi.github.io/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-08%20112000.png)
